@@ -89,16 +89,16 @@ ctrl-slash = 'layout tiles horizontal vertical'
 ctrl-comma = 'layout accordion horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-ctrl-h = 'focus left'
-ctrl-j = 'focus down'
-ctrl-k = 'focus up'
-ctrl-l = 'focus right'
+alt-h = 'focus left'
+alt-j = 'focus down'
+alt-k = 'focus up'
+alt-l = 'focus right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
-ctrl-shift-h = 'move left'
-ctrl-shift-j = 'move down'
-ctrl-shift-k = 'move up'
-ctrl-shift-l = 'move right'
+alt-shift-h = 'move left'
+alt-shift-j = 'move down'
+alt-shift-k = 'move up'
+alt-shift-l = 'move right'
 
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
@@ -115,10 +115,10 @@ ctrl-9 = 'workspace 9'
 ctrl-a = 'workspace A'
 # Browser
 ctrl-b = 'workspace B'
+# Dev
+ctrl-d = 'workspace D'
 # Miscellaneous
 ctrl-m = 'workspace M'
-# Programming
-ctrl-p = 'workspace P'
 # Slack
 ctrl-s = 'workspace S'
 # Terminal
@@ -138,10 +138,10 @@ ctrl-shift-9 = 'move-node-to-workspace 9'
 ctrl-shift-a = 'move-node-to-workspace A'
 # Browser
 ctrl-shift-b = 'move-node-to-workspace B'
+# Development
+ctrl-shift-d = 'move-node-to-workspace D'
 # Micellaneous
 ctrl-shift-m = 'move-node-to-workspace M'
-# Programming
-ctrl-shift-p = 'move-node-to-workspace P'
 # Slack
 ctrl-shift-s = 'move-node-to-workspace S'
 # Terminal
