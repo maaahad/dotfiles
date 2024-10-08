@@ -115,14 +115,14 @@ ctrl-9 = 'workspace 9'
 ctrl-a = 'workspace A'
 # Browser
 ctrl-b = 'workspace B'
-# Dev
-ctrl-d = 'workspace D'
 # Miscellaneous
 ctrl-m = 'workspace M'
 # Slack
 ctrl-s = 'workspace S'
 # Terminal
 ctrl-t = 'workspace T'
+# VSCode
+ctrl-v = 'workspace V'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 ctrl-shift-1 = 'move-node-to-workspace 1'
@@ -138,14 +138,14 @@ ctrl-shift-9 = 'move-node-to-workspace 9'
 ctrl-shift-a = 'move-node-to-workspace A'
 # Browser
 ctrl-shift-b = 'move-node-to-workspace B'
-# Development
-ctrl-shift-d = 'move-node-to-workspace D'
 # Micellaneous
 ctrl-shift-m = 'move-node-to-workspace M'
 # Slack
 ctrl-shift-s = 'move-node-to-workspace S'
 # Terminal
 ctrl-shift-t = 'move-node-to-workspace T'
+# VSCode
+ctrl-shift-v = 'move-node-to-workspace V'
 # Fullscreen
 ctrl-shift-f = 'fullscreen'
 
