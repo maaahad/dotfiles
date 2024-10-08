@@ -155,7 +155,7 @@ ctrl-tab = 'workspace-back-and-forth'
 ctrl-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-ctrl-shift-semicolon = 'mode service'
+ctrl-shift-space = 'mode service'
 
 ctrl-shift-r = 'mode resize'
 
