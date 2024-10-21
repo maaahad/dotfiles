@@ -113,8 +113,8 @@ ctrl-8 = 'workspace 8'
 ctrl-9 = 'workspace 9'
 # Ahad: Personal
 ctrl-a = 'workspace A'
-# Browser
-ctrl-b = 'workspace B'
+# Web
+ctrl-w = 'workspace W'
 # Miscellaneous
 ctrl-m = 'workspace M'
 # Slack
@@ -136,8 +136,8 @@ ctrl-shift-8 = 'move-node-to-workspace 8'
 ctrl-shift-9 = 'move-node-to-workspace 9'
 # Ahad
 ctrl-shift-a = 'move-node-to-workspace A'
-# Browser
-ctrl-shift-b = 'move-node-to-workspace B'
+# Web
+ctrl-shift-w = 'move-node-to-workspace W'
 # Micellaneous
 ctrl-shift-m = 'move-node-to-workspace M'
 # Slack
