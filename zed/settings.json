@@ -16,5 +16,9 @@
     "mode": "system",
     "light": "Gruvbox Dark",
     "dark": "One Dark"
+  },
+  "features": {
+    // Which inline completion provider to use.
+    "inline_completion_provider": "none"
   }
 }
