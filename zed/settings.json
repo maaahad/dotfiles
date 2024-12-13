@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  // Whether to enable vim modes and key bindings.
   "vim_mode": true,
   "ui_font_size": 14,
   "buffer_font_size": 12,
