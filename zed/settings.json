@@ -21,5 +21,7 @@
   "features": {
     // Which inline completion provider to use.
     "inline_completion_provider": "none"
-  }
+  },
+  // Whether to confirm before quitting Zed.
+  "confirm_quit": true
 }
