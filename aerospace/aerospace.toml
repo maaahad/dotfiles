@@ -123,6 +123,8 @@ ctrl-s = 'workspace S'
 ctrl-t = 'workspace T'
 # VSCode
 ctrl-v = 'workspace V'
+# ZedCode
+ctrl-z = 'workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 ctrl-shift-1 = 'move-node-to-workspace 1'
@@ -146,6 +148,8 @@ ctrl-shift-s = 'move-node-to-workspace S'
 ctrl-shift-t = 'move-node-to-workspace T'
 # VSCode
 ctrl-shift-v = 'move-node-to-workspace V'
+# ZedCode
+ctrl-shift-z = 'move-node-to-workspace Z'
 # Fullscreen
 ctrl-shift-f = 'fullscreen'
 
