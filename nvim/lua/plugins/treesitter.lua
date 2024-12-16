@@ -20,6 +20,7 @@ return {
         'yaml', 
         'graphql', 
         'gitignore', 
+        'styled',
       }, 
 
       highlight = {
