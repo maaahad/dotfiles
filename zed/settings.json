@@ -15,7 +15,7 @@
   "relative_line_numbers": true,
   "theme": {
     "mode": "system",
-    "light": "Gruvbox Dark",
+    "light": "Solarized Dark",
     "dark": "One Dark"
   },
   "features": {
