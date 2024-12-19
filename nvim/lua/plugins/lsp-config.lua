@@ -40,15 +40,17 @@ return {
 			group = vim.api.nvim_create_augroup("UserLspConfig", {}),
 			callback = function(ev)
 				local opts = { buffer = ev.buf }
-				vim.keymap.set("n", "grd", vim.lsp.buf.definition, opts)
-				vim.keymap.set("n", "grr", vim.lsp.buf.references, opts)
-				vim.keymap.set("n", "gri", vim.lsp.buf.implementation, opts)
+				vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+				vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
+				vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
 				vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
 				vim.keymap.set("n", "grn", vim.lsp.buf.rename, opts)
-				vim.keymap.set({ "n", "v" }, "gra", vim.lsp.buf.code_action, opts)
+				vim.keymap.set({ "n", "v" }, "ga", vim.lsp.buf.code_action, opts)
 				vim.keymap.set("n", "gO", vim.lsp.buf.document_symbol, opts)
 				vim.keymap.set("i", "<C-s>", vim.lsp.buf.signature_help, opts)
+				-- vim.cmd([[ command! Format execute 'lua vim.lsp.buf.formatting()' ]])
 			end,
+
 		})
 	end,
 }
