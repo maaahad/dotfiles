@@ -1,10 +1,6 @@
-
 -- This file is automatically loaded by plugins.core
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-
-
-
 
 -- Hide deprecation warnings
 vim.g.deprecation_warnings = false
@@ -17,8 +13,8 @@ vim.g.trouble_lualine = true
 local opt = vim.opt
 
 -- Line numbers
-opt.number = true 		-- display line number
-opt.relativenumber = true 	-- relative line number
+opt.number = true -- display line number
+opt.relativenumber = true -- relative line number
 
 opt.autowrite = true -- Enable auto write
 -- only set clipboard if not in ssh, to make sure the OSC 52
@@ -30,12 +26,12 @@ opt.confirm = true -- Confirm to save changes before exiting modified buffer
 opt.cursorline = true -- Enable highlighting of the current line
 opt.expandtab = true -- Use spaces instead of tabs
 opt.fillchars = {
-  foldopen = "",
-  foldclose = "",
-  fold = " ",
-  foldsep = " ",
-  diff = "╱",
-  eob = " ",
+	foldopen = "",
+	foldclose = "",
+	fold = " ",
+	foldsep = " ",
+	diff = "╱",
+	eob = " ",
 }
 opt.foldlevel = 99
 opt.formatexpr = "v:lua.require'lazyvim.util'.format.formatexpr()"
@@ -54,8 +50,7 @@ opt.pumheight = 10 -- Maximum number of entries in a popup
 opt.ruler = false -- Disable the default ruler
 opt.scrolloff = 4 -- Lines of context
 opt.sessionoptions = { "buffers", "curdir", "tabpages", "winsize", "help", "globals", "skiprtp", "folds" }
-opt.shiftround = true -- Round indent
-opt.shiftwidth = 2 -- Size of an indent
+opt.shiftround = true -- Round indent opt.shiftwidth = 2 -- Size of an indent
 opt.shortmess:append({ W = true, I = true, c = true, C = true })
 opt.showmode = false -- Dont show mode since we have a statusline
 opt.sidescrolloff = 8 -- Columns of context
@@ -69,7 +64,12 @@ opt.splitright = true -- Put new windows right of current
 -- opt.statuscolumn = [[%!v:lua.require'snacks.statuscolumn'.get()]]
 opt.tabstop = 2 -- Number of spaces tabs count for
 opt.termguicolors = true -- True color support
-opt.timeoutlen = vim.g.vscode and 1000 or 300 -- Lower than default (1000) to quickly trigger which-key
+
+-- FIXME: timeoput between keystroke
+-- opt.timeoutlen = vim.g.vscode and 1000 or 300 -- Lower than default (1000) to quickly trigger which-key
+opt.timeoutlen = 1000 -- Lower than default (1000) to quickly trigger which-key
+opt.ttimeoutlen = 0
+
 opt.undofile = true
 opt.undolevels = 10000
 opt.updatetime = 200 -- Save swap file and trigger CursorHold
@@ -79,13 +79,13 @@ opt.winminwidth = 5 -- Minimum window width
 opt.wrap = false -- Disable line wrap
 
 if vim.fn.has("nvim-0.10") == 1 then
-  opt.smoothscroll = true
-  opt.foldexpr = "v:lua.require'lazyvim.util'.ui.foldexpr()"
-  opt.foldmethod = "expr"
-  opt.foldtext = ""
+	opt.smoothscroll = true
+	opt.foldexpr = "v:lua.require'lazyvim.util'.ui.foldexpr()"
+	opt.foldmethod = "expr"
+	opt.foldtext = ""
 else
-  opt.foldmethod = "indent"
-  opt.foldtext = "v:lua.require'lazyvim.util'.ui.foldtext()"
+	opt.foldmethod = "indent"
+	opt.foldtext = "v:lua.require'lazyvim.util'.ui.foldtext()"
 end
 
 -- Fix markdown indentation settings
