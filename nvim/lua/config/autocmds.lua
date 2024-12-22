@@ -9,16 +9,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
--- Terminal
--- vim.api.nvim_create_autocmd("TermOpen", {
---   group = vim.api.nvim_create_augroup("custom_term_open", { clear = true }),
---   callback = function()
---     vim.opt.number = false
---     vim.opt.relativenumber = false
---   end,
--- })
---
---
 -- Float Terminal
 local state = {
   floating = {
@@ -64,6 +54,7 @@ local function open_floating_terminal(params)
   local win = vim.api.nvim_open_win(buf, true, opts)
 
   -- Set terminal options for the buffer
+  -- BUG: The followings are buggy
   -- vim.api.nvim_buf_set_option(buf, "bufhidden", "wipe")
   -- vim.fn.termopen(vim.o.shell) -- Start the terminal in the buffer
 
