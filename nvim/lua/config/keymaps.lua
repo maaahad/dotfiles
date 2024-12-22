@@ -1,7 +1,7 @@
 local keymap = vim.keymap
 
 -- Exit insert mode
-keymap.set("i", "kk", "<Esc>")
+keymap.set("i", "kk", "<esc>")
 
 -- Terminal
 -- TODO: if happy remap st to tt
