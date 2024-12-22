@@ -1,5 +1,13 @@
-
 local keymap = vim.keymap
 
 -- Exit insert mode
-keymap.set("i", "kk", "<Esc>") 
+keymap.set("i", "kk", "<Esc>")
+
+-- Terminal
+-- TODO: if happy remap st to tt
+vim.keymap.set("n", "<leader>st", function()
+  vim.cmd.vnew()
+  vim.cmd.term()
+  vim.cmd.wincmd("J")
+  vim.api.nvim_win_set_height(0, 15)
+end)
