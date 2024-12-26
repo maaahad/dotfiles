@@ -4,8 +4,21 @@ return {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
   },
+  opts = {
+    servers = {
+      biome = {
+        -- Additional Biome-specific settings
+        settings = {
+          biome = {
+            validate = true, -- Enable validation
+            format = true,   -- Enable formatting
+          },
+        },
+      },
+    },
+  },
   config = function()
-    require("mason").setup()
+    -- require("mason").setup()
     require("mason-lspconfig").setup()
 
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
@@ -62,6 +75,16 @@ return {
         -- end
 
         if client:supports_method("textDocument/formatting") then
+          -- Keymap for manual formatting
+          vim.api.nvim_buf_set_keymap(ev.buf, "n", "<leader>f", "", {
+            noremap = true,
+            silent = true,
+            desc = "Format Document",
+            callback = function()
+              vim.lsp.buf.format({ bufnr = ev.buf })
+            end,
+          })
+
           -- Format the current buffer on save
           vim.api.nvim_create_autocmd("BufWritePre", {
             buffer = ev.buf,
