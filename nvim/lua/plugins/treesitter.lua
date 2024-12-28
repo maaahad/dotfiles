@@ -60,7 +60,8 @@ return {
 			-- List of parsers to ignore installing (or "all")
 			ignore_install = {},
 
-			modules = {}, //FIXME: not sure how the value would look like
+			-- FIXME: not sure how the value would look like
+			modules = {},
 		})
 	end,
 }
