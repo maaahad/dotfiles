@@ -111,16 +111,10 @@ ctrl-6 = 'workspace 6'
 ctrl-7 = 'workspace 7'
 ctrl-8 = 'workspace 8'
 ctrl-9 = 'workspace 9'
-# Ahad: Personal
-ctrl-a = 'workspace A'
 # Miscellaneous
 ctrl-m = 'workspace M'
 # Slack
 ctrl-s = 'workspace S'
-# Terminal
-ctrl-t = 'workspace T'
-# VSCode
-ctrl-v = 'workspace V'
 # ZedCode
 ctrl-z = 'workspace Z'
 
@@ -134,16 +128,10 @@ ctrl-shift-6 = 'move-node-to-workspace 6'
 ctrl-shift-7 = 'move-node-to-workspace 7'
 ctrl-shift-8 = 'move-node-to-workspace 8'
 ctrl-shift-9 = 'move-node-to-workspace 9'
-# Ahad
-ctrl-shift-a = 'move-node-to-workspace A'
 # Micellaneous
 ctrl-shift-m = 'move-node-to-workspace M'
 # Slack
 ctrl-shift-s = 'move-node-to-workspace S'
-# Terminal
-ctrl-shift-t = 'move-node-to-workspace T'
-# VSCode
-ctrl-shift-v = 'move-node-to-workspace V'
 # ZedCode
 ctrl-shift-z = 'move-node-to-workspace Z'
 # Fullscreen
