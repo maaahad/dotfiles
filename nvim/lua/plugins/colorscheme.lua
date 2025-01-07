@@ -14,7 +14,10 @@ return {
 	"maxmx03/solarized.nvim",
 	-- lazy = false,
 	priority = 1000,
-	opts = {},
+	opts = {
+		-- "spring" | "summer" | "autumn" | "winter" (default)
+		variant = "spring",
+	},
 	config = function(_, opts)
 		vim.o.termguicolors = true
 		-- vim.o.background = "light"
