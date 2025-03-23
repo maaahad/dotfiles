@@ -14,8 +14,8 @@ return {
 			vim.o.background = "dark"
 
 			-- Setting solarized as default colorscheme
-			require("solarized").setup(opts)
-			vim.cmd.colorscheme("solarized")
+			-- require("solarized").setup(opts)
+			-- vim.cmd.colorscheme("solarized")
 		end,
 	},
 	{
@@ -31,5 +31,14 @@ return {
 			require("kanagawa").setup(opts)
 		end,
 	},
-	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		priority = 1000,
+		config = function(_, opts)
+			-- Setting solarized as default colorscheme
+			require("catppuccin").setup(opts)
+			vim.cmd.colorscheme("catppuccin-latte")
+		end,
+	},
 }
