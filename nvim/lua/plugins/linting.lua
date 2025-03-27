@@ -5,7 +5,6 @@ return {
 		local lint = require("lint")
 
 		lint.linters_by_ft = {
-			-- NOTE: replaced eslint_d with biomejs
 			javascript = { "biomejs" },
 			typescript = { "biomejs" },
 			javascriptreact = { "biomejs" },
