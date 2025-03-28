@@ -1,8 +1,15 @@
--- kanagawa
 return {
 	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		priority = 1000,
+		config = function(_, opts)
+			require("catppuccin").setup(opts)
+			vim.cmd.colorscheme("catppuccin-latte")
+		end,
+	},
+	{
 		"maxmx03/solarized.nvim",
-		-- lazy = false,
 		priority = 1000,
 		opts = {
 			-- "spring" | "summer" | "autumn" | "winter" (default)
@@ -10,11 +17,10 @@ return {
 		},
 		config = function(_, opts)
 			vim.o.termguicolors = true
-			-- vim.o.background = "light"
-			vim.o.background = "dark"
+			vim.o.background = "light"
+			-- vim.o.background = "dark"
 
-			-- Setting solarized as default colorscheme
-			-- require("solarized").setup(opts)
+			require("solarized").setup(opts)
 			-- vim.cmd.colorscheme("solarized")
 		end,
 	},
@@ -29,16 +35,6 @@ return {
 		priority = 1000,
 		config = function(opts)
 			require("kanagawa").setup(opts)
-		end,
-	},
-	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-		priority = 1000,
-		config = function(_, opts)
-			-- Setting solarized as default colorscheme
-			require("catppuccin").setup(opts)
-			vim.cmd.colorscheme("catppuccin-latte")
 		end,
 	},
 }
