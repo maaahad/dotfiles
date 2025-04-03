@@ -1,12 +1,22 @@
 return {
 	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+		config = function(_, opts)
+			require("tokyonight").setup(opts)
+			vim.cmd.colorscheme("tokyonight-day")
+		end,
+	},
+	{
 		"catppuccin/nvim",
 		name = "catppuccin",
 		priority = 1000,
-		config = function(_, opts)
-			require("catppuccin").setup(opts)
-			vim.cmd.colorscheme("catppuccin-latte")
-		end,
+		-- config = function(_, opts)
+		-- 	require("catppuccin").setup(opts)
+		-- 	vim.cmd.colorscheme("catppuccin-latte")
+		-- end,
 	},
 	{
 		"maxmx03/solarized.nvim",
@@ -23,12 +33,6 @@ return {
 			require("solarized").setup(opts)
 			-- vim.cmd.colorscheme("solarized")
 		end,
-	},
-	{
-		"folke/tokyonight.nvim",
-		lazy = false,
-		priority = 1000,
-		opts = {},
 	},
 	{
 		"rebelot/kanagawa.nvim",
