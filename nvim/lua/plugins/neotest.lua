@@ -11,7 +11,12 @@ return {
 	config = function()
 		require("neotest").setup({
 			adapters = {
-				require("neotest-vitest"),
+				require("neotest-vitest")({
+					-- Filter directories when searching for test files. Useful in large projects
+					fioter_dir = function(name, rel_path, _root)
+						return name ~= "node_modules"
+					end,
+				}),
 				require("neotest-golang"),
 			},
 		})
