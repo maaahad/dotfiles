@@ -1043,35 +1043,35 @@ require('lazy').setup({
     end,
   },
 
-  {
-    'lukas-reineke/indent-blankline.nvim',
-    event = 'VeryLazy',
-    opts = function()
-      return {
-        indent = {
-          char = '│',
-          tab_char = '│',
-        },
-        scope = { show_start = false, show_end = false },
-        exclude = {
-          filetypes = {
-            'help',
-            'alpha',
-            'dashboard',
-            'neo-tree',
-            'Trouble',
-            'trouble',
-            'lazy',
-            'mason',
-            'notify',
-            'toggleterm',
-            'lazyterm',
-          },
-        },
-      }
-    end,
-    main = 'ibl',
-  },
+  -- {
+  --   'lukas-reineke/indent-blankline.nvim',
+  --   event = 'VeryLazy',
+  --   opts = function()
+  --     return {
+  --       indent = {
+  --         char = '│',
+  --         tab_char = '│',
+  --       },
+  --       scope = { show_start = false, show_end = false },
+  --       exclude = {
+  --         filetypes = {
+  --           'help',
+  --           'alpha',
+  --           'dashboard',
+  --           'neo-tree',
+  --           'Trouble',
+  --           'trouble',
+  --           'lazy',
+  --           'mason',
+  --           'notify',
+  --           'toggleterm',
+  --           'lazyterm',
+  --         },
+  --       },
+  --     }
+  --   end,
+  --   main = 'ibl',
+  -- },
 
   -- mysql database command
   {
@@ -1141,7 +1141,7 @@ require('lazy').setup({
   --
   -- TODO: (maaahad) we may try the lazyvim config for the following
   require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
+  require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.neo-tree',
