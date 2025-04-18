@@ -924,6 +924,7 @@ require('lazy').setup({
         background = 'hard',
       }
 
+      -- load the colorscheme and set the background color to light
       vim.cmd.colorscheme 'everforest'
       vim.cmd.set 'background=light'
     end,
@@ -942,11 +943,6 @@ require('lazy').setup({
           comments = { italic = false }, -- Disable italics in comments
         },
       }
-
-      -- Load the colorscheme here.
-      -- Like many other themes, this one has different styles, and you could load
-      -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      -- vim.cmd.colorscheme 'tokyonight-night'
     end,
   },
   {
