@@ -52,7 +52,26 @@ return {
       --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
       --   },
       -- },
-      -- pickers = {}
+
+      -- TODO: set the same theme all
+      pickers = {
+        -- cursor, dropdown, ivy
+        find_files = {
+          theme = 'ivy',
+        },
+        live_grep = {
+          theme = 'ivy',
+        },
+        grep_string = {
+          theme = 'ivy',
+        },
+        buffers = {
+          theme = 'ivy',
+        },
+        help_tags = {
+          theme = 'ivy',
+        },
+      },
       extensions = {
         ['ui-select'] = {
           require('telescope.themes').get_dropdown(),
