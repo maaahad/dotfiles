@@ -82,6 +82,7 @@ return {
     -- Enable Telescope extensions if they are installed
     pcall(require('telescope').load_extension, 'fzf')
     pcall(require('telescope').load_extension, 'ui-select')
+    pcall(require('telescope').load_extension, 'rest')
 
     -- See `:help telescope.builtin`
     local builtin = require 'telescope.builtin'
@@ -100,6 +101,9 @@ return {
     vim.keymap.set('n', '<leader>sC', builtin.commands, { desc = '[S]earch [C]ommands' })
     vim.keymap.set('n', '<leader>sq', builtin.quickfix, { desc = '[S]earch [Q]uickfix list' })
     vim.keymap.set('n', '<leader>sm', builtin.marks, { desc = '[S]earch [M]arks list' })
+
+    -- Rest
+    vim.keymap.set('n', '<leader>sr', ':Telescope rest select_env<CR>', { desc = '[S]earch [E]nvironment Variable' })
 
     -- Slightly advanced example of overriding default behavior and theme
     vim.keymap.set('n', '<leader>/', function()
