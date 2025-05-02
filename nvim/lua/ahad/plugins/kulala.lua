@@ -22,4 +22,7 @@ return {
     { '<leader>Rt', "<cmd>lua require('kulala').toggle_view()<cr>", desc = 'Toggle headers/body', ft = 'http' },
   },
   opts = {},
+  config = function()
+    require('kulala').setup {}
+  end,
 }
