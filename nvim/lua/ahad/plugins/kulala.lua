@@ -1,6 +1,6 @@
 return {
   'mistweaverco/kulala.nvim',
-  ft = 'http',
+  ft = { 'http', 'rest' },
   keys = {
     { '<leader>R', '', desc = '+Rest', ft = 'http' },
     { '<leader>Rb', "<cmd>lua require('kulala').scratchpad()<cr>", desc = 'Open scratchpad', ft = 'http' },
@@ -21,8 +21,9 @@ return {
     { '<leader>RS', "<cmd>lua require('kulala').show_stats()<cr>", desc = 'Show stats', ft = 'http' },
     { '<leader>Rt', "<cmd>lua require('kulala').toggle_view()<cr>", desc = 'Toggle headers/body', ft = 'http' },
   },
-  opts = {},
-  config = function()
-    require('kulala').setup {}
-  end,
+  opts = {
+
+    -- your configuration comes here
+    global_keymaps = false,
+  },
 }
