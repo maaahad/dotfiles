@@ -102,7 +102,7 @@ return {
     vim.keymap.set('n', '<leader>sm', builtin.marks, { desc = '[S]earch [M]arks list' })
 
     -- Rest
-    vim.keymap.set('n', '<leader>sr', ':Telescope rest select_env<CR>', { desc = '[S]earch [E]nvironment Variable' })
+    vim.keymap.set('n', '<leader>se', ':Telescope rest select_env<CR>', { desc = '[S]earch [E]nvironment Variable' })
 
     -- Slightly advanced example of overriding default behavior and theme
     vim.keymap.set('n', '<leader>/', function()
