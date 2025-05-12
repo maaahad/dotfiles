@@ -99,7 +99,7 @@ return {
             },
             {
               icon = ' ',
-              title = 'Git Status',
+              title = 'Git Diff',
               cmd = 'git --no-pager diff --stat -B -M -C',
               height = 10,
             },
