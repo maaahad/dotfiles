@@ -3,9 +3,33 @@ return {
   'nvim-treesitter/nvim-treesitter',
   build = ':TSUpdate',
   main = 'nvim-treesitter.configs', -- Sets main module to use for opts
+  event = { 'BufReadPre', 'BufNewFile' },
+  dependencies = { 'nvim-tree/nvim-web-devicons' },
   -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
   opts = {
-    ensure_installed = { 'http', 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
+    ensure_installed = {
+      'http',
+      'bash',
+      'c',
+      'diff',
+      'html',
+      'lua',
+      'luadoc',
+      'markdown',
+      'markdown_inline',
+      'query',
+      'vim',
+      'vimdoc',
+      'css',
+      'json',
+      'javascript',
+      'typescript',
+      'tsx',
+      'yaml',
+      'graphql',
+      'gitignore',
+      'styled',
+    },
     -- Autoinstall languages that are not installed
     auto_install = true,
     highlight = {
@@ -15,7 +39,19 @@ return {
       --  the list of additional_vim_regex_highlighting and disabled languages for indent.
       additional_vim_regex_highlighting = { 'ruby' },
     },
+
     indent = { enable = true, disable = { 'ruby' } },
+    autotag = { enable = true, enable_close_on_slash = false },
+
+    incremental_selection = {
+      enable = true,
+      keymaps = {
+        init_selection = '<C-space>',
+        node_incremental = '<C-space>',
+        scope_incremental = false,
+        node_decremental = '<bs>',
+      },
+    },
   },
   -- There are additional nvim-treesitter modules that you can use to interact
   -- with nvim-treesitter. You should go explore a few and see what interests you:
