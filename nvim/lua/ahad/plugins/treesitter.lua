@@ -41,7 +41,6 @@ return {
     },
 
     indent = { enable = true, disable = { 'ruby' } },
-    autotag = { enable = true, enable_close_on_slash = false },
 
     incremental_selection = {
       enable = true,
