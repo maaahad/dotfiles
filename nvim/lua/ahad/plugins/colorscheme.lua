@@ -12,8 +12,8 @@ return {
       }
 
       -- load the colorscheme and set the background color to light
-      vim.cmd.colorscheme 'everforest'
-      vim.cmd.set 'background=light'
+      -- vim.cmd.colorscheme 'everforest'
+      -- vim.cmd.set 'background=light'
     end,
   },
   { -- You can easily change to a different colorscheme.
@@ -91,5 +91,9 @@ return {
   {
     'rose-pine/neovim',
     name = 'rose-pine',
+    config = function()
+      -- load the colorscheme and set the background color to light
+      vim.cmd.colorscheme 'rose-pine-dawn'
+    end,
   },
 }
