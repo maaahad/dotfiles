@@ -158,6 +158,33 @@ return {
     },
   },
   keys = {
+    -- buffer deletions
+    {
+      '<leader>bd',
+      function()
+        Snacks.bufdelete()
+      end,
+      desc = '[B]uffer [d]elete',
+      mode = 'n',
+    },
+    {
+      '<leader>ba',
+      function()
+        Snacks.bufdelete.all()
+      end,
+      desc = '[B]uffer delete [a]ll',
+      mode = 'n',
+    },
+
+    {
+      '<leader>bo',
+      function()
+        Snacks.bufdelete.other()
+      end,
+      desc = '[B]uffer delete [o]thers',
+      mode = 'n',
+    },
+
     -- Top Pickers & Explorer
     {
       '<leader><space>',
@@ -558,13 +585,6 @@ return {
         Snacks.notifier.show_history()
       end,
       desc = 'Notification History',
-    },
-    {
-      '<leader>bd',
-      function()
-        Snacks.bufdelete()
-      end,
-      desc = 'Delete Buffer',
     },
     {
       '<leader>cR',
