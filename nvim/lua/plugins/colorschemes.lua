@@ -28,8 +28,10 @@ return {
       vim.cmd("colorscheme rusty")
     end,
   },
-
   {
     "neanias/everforest-nvim",
+  },
+  {
+    "shaunsingh/nord.nvim",
   },
 }
