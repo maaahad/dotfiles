@@ -25,7 +25,7 @@ return {
     },
     config = function(_, opts)
       require("rusty").setup(opts)
-      vim.cmd("colorscheme rusty")
+      -- vim.cmd("colorscheme rusty")
     end,
   },
   {
@@ -33,5 +33,20 @@ return {
   },
   {
     "shaunsingh/nord.nvim",
+  },
+  {
+    "smit4k/shale.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      -- vim.cmd.colorscheme("shale")
+    end,
+  },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    config = function()
+      vim.cmd("colorscheme rose-pine")
+    end,
   },
 }
