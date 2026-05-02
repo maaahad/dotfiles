@@ -25,7 +25,7 @@ return {
     },
     config = function(_, opts)
       require("rusty").setup(opts)
-      -- vim.cmd("colorscheme rusty")
+      vim.cmd("colorscheme rusty")
     end,
   },
   {
@@ -46,7 +46,7 @@ return {
     "rose-pine/neovim",
     name = "rose-pine",
     config = function()
-      vim.cmd("colorscheme rose-pine")
+      -- vim.cmd("colorscheme rose-pine")
     end,
   },
 }
