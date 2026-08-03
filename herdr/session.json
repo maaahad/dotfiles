@@ -1,0 +1,192 @@
+{
+  "version": 3,
+  "workspaces": [
+    {
+      "id": "w6",
+      "custom_name": "typetui",
+      "identity_cwd": "/Users/maaahad/Documents/projects/typetui",
+      "public_pane_numbers": {
+        "7": 1
+      },
+      "next_public_pane_number": 2,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 2,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 7
+          },
+          "panes": {
+            "7": {
+              "cwd": "/Users/maaahad/Documents/projects/typetui"
+            }
+          },
+          "zoomed": false,
+          "focused": 7,
+          "root_pane": 7
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "w7",
+      "custom_name": "money-lens-api",
+      "identity_cwd": "/Users/maaahad/Documents/projects/money-lens/apps/apis/rust_graphql",
+      "public_pane_numbers": {
+        "8": 1
+      },
+      "next_public_pane_number": 2,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 2,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 8
+          },
+          "panes": {
+            "8": {
+              "cwd": "/Users/maaahad/Documents/projects/money-lens/apps/apis/rust_graphql"
+            }
+          },
+          "zoomed": false,
+          "focused": 8,
+          "root_pane": 8
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "w8",
+      "custom_name": "money-lens-web",
+      "identity_cwd": "/Users/maaahad/Documents/projects/money-lens-web",
+      "public_pane_numbers": {
+        "9": 1,
+        "10": 2
+      },
+      "next_public_pane_number": 3,
+      "public_tab_numbers": [
+        1,
+        2
+      ],
+      "next_public_tab_number": 3,
+      "tabs": [
+        {
+          "custom_name": "editor",
+          "layout": {
+            "Pane": 9
+          },
+          "panes": {
+            "9": {
+              "cwd": "/Users/maaahad/Documents/projects/money-lens-web"
+            }
+          },
+          "zoomed": false,
+          "focused": 9,
+          "root_pane": 9
+        },
+        {
+          "custom_name": "run",
+          "layout": {
+            "Pane": 10
+          },
+          "panes": {
+            "10": {
+              "cwd": "/Users/maaahad/Documents/projects/money-lens-web/apps/web"
+            }
+          },
+          "zoomed": false,
+          "focused": 10,
+          "root_pane": 10
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "w9",
+      "custom_name": "external-server",
+      "identity_cwd": "/Users/maaahad",
+      "public_pane_numbers": {
+        "12": 2,
+        "11": 1
+      },
+      "next_public_pane_number": 3,
+      "public_tab_numbers": [
+        1,
+        2
+      ],
+      "next_public_tab_number": 3,
+      "tabs": [
+        {
+          "custom_name": "postgres",
+          "layout": {
+            "Pane": 11
+          },
+          "panes": {
+            "11": {
+              "cwd": "/Users/maaahad"
+            }
+          },
+          "zoomed": false,
+          "focused": 11,
+          "root_pane": 11
+        },
+        {
+          "custom_name": "redis",
+          "layout": {
+            "Pane": 12
+          },
+          "panes": {
+            "12": {
+              "cwd": "/Users/maaahad"
+            }
+          },
+          "zoomed": false,
+          "focused": 12,
+          "root_pane": 12
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "wA",
+      "custom_name": "config",
+      "identity_cwd": "/Users/maaahad",
+      "public_pane_numbers": {
+        "13": 1
+      },
+      "next_public_pane_number": 2,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 2,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 13
+          },
+          "panes": {
+            "13": {
+              "cwd": "/Users/maaahad"
+            }
+          },
+          "zoomed": false,
+          "focused": 13,
+          "root_pane": 13
+        }
+      ],
+      "active_tab": 0
+    }
+  ],
+  "active": 4,
+  "selected": 4,
+  "sidebar_width": 26,
+  "sidebar_section_split": 0.5,
+  "collapsed_space_keys": []
+}
