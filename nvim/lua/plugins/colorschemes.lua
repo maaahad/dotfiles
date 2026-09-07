@@ -6,6 +6,13 @@
 -- =========================================================
 return {
 	{
+		"ReallySnazzy/osaka-jade-nvim",
+		lazy = false,
+		init = function()
+			-- vim.cmd.colorscheme("osaka-jade")
+		end,
+	},
+	{
 		-- Faithful port of Cursor's default dark themes
 		-- variants: cursor-dark | cursor-dark-midnight
 		"ydkulks/cursor-dark.nvim",
